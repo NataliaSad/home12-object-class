@@ -22,4 +22,31 @@ public class Author {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    @Override
+    public String toString() {
+        return name + " " + surname;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Author author = (Author) o;
+        return name.equals(author.getName()) && surname.equals(author.getSurname());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 12;
+return  result + name.hashCode() * 15 + surname. hashCode() + 17;
+    }
 }
+
+
+
+

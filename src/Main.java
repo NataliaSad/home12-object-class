@@ -1,10 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         Author pushkin = new Author( "Александр", " Пушкин ");
-        Author tolstoy = new Author( " Алексей ", " Толстой ");
+        Author tolstoy2 = new Author( " Алексей ", " Толстой1 ");
         Book dubrovskii = new Book(" Дубровский", 1833, pushkin);
-        Book aelita = new Book( " Аэлита", 1923, tolstoy);
+        Book aelita = new Book( " Аэлита", 1923, tolstoy2);
 
+        System.out.println(tolstoy2.equals(tolstoy2));
+        System.out.println("Пушкин");
+        System.out.println("dubrovskii");
+        System.out.println("aelita");
+        System.out.println(dubrovskii.hashCode());
+        System.out.println(aelita.hashCode());
         print(dubrovskii);
         print(aelita);
         dubrovskii.printInfo();
