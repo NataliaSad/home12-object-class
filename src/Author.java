@@ -42,8 +42,8 @@ public class Author {
 
     @Override
     public int hashCode() {
-        int result = 12;
-return  result + name.hashCode() * 15 + surname. hashCode() + 17;
+        int result = 3;
+return  result + name.hashCode() * 11 + surname. hashCode() + 7;
     }
 }
 

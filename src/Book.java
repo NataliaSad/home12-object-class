@@ -51,7 +51,8 @@ public class Book {
     }
     @Override
     public int hashCode() {
-        return  Objects.hash(title,publishingYear,author);
+        int result = 14;
+        return result + Objects.hash(title,publishingYear,author) * 2;
     }
 }
 
