@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Author {
     private String name;
     private String surname;
@@ -42,10 +44,10 @@ public class Author {
 
     @Override
     public int hashCode() {
-        int result = 3;
-return  result + name.hashCode() * 11 + surname. hashCode() + 7;
+        return  Objects.hash(name, surname);
     }
-}
+    }
+
 
 
 
